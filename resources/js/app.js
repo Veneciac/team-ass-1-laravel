@@ -13,5 +13,6 @@ require("./bootstrap");
  */
 
 require("./components/Example");
+// require("./containers/App");
 
 require("bootstrap/dist/css/bootstrap.min.css");
