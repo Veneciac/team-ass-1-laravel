@@ -2,7 +2,6 @@
 copy folder db laravel_db ke folder xampp\mysql\data
 
 1. masuk ke folder aplikasi 
-cd helen\src\laravel-crud-app
 
 2.kosongkan data
 php artisan migrate:refresh
