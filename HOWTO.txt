@@ -1,0 +1,18 @@
+0. copy database
+copy folder db laravel_db ke folder xampp\mysql\data
+
+1. masuk ke folder aplikasi 
+cd helen\src\laravel-crud-app
+
+2.kosongkan data
+php artisan migrate:refresh
+
+3. populate menu
+php artisan db:seed --class=NavbarSeeder
+
+4. run
+php artisan serve  
+
+
+catatan:
+konfigurasi ada di file .env di dalam folder src\laravel-crud-app
