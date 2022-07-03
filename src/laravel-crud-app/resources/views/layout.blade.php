@@ -79,6 +79,12 @@
                                 <a class="nav-link" href="{{ route($navbarItem->route) }}">{{ $navbarItem->name }}</a>
                             </li>
                         @endforeach
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="{{ url('students') }}">Students</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('products') }}">Product</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('logout') }}">Logout</a>
                         </li>

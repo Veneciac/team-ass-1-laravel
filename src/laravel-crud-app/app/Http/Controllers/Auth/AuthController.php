@@ -66,6 +66,7 @@ class AuthController extends Controller
             'place_of_birth' => 'required|max:50',
             'date_of_birth' => 'required|before:today',
             'gender' => 'required',
+            'level' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:6',
         ]);
@@ -184,6 +185,7 @@ class AuthController extends Controller
             'date_of_birth' => $data['date_of_birth'],
             'gender' => $data['gender'],
             'email' => $data['email'],
+            'level' => $data['level'],
             'password' => Hash::make($data['password'])
         ]);
     }

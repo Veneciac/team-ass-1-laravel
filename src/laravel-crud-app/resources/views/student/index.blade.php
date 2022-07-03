@@ -5,6 +5,7 @@
             margin-top: 50px;
         }
     </style>
+    <div class="container">
     <div class="push-top">
         @if(session()->get('success'))
             <div class="alert alert-success">
@@ -43,4 +44,6 @@
             </tbody>
         </table>
         <div>
+    </div>
+    
 @endsection

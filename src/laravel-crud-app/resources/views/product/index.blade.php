@@ -5,13 +5,16 @@
             margin-top: 50px;
         }
     </style>
+    <div class="container">
     <div class="push-top">
         @if(session()->get('success'))
             <div class="alert alert-success">
                 {{ session()->get('success') }}
             </div><br />
         @endif
-        <a href="{{ route('products.create')}}" class="btn btn-primary btn-sm float-right">Create</a>
+        @if(Auth::user()->level == 'super')
+        <a href="{{ route('products.create')}}" class="btn btn-primary btn-sm float-right mb-3">Create</a>
+        @endif
         <table class="table">
             <thead>
             <tr class="table-warning">
@@ -46,4 +49,6 @@
             </tbody>
         </table>
         <div>
+    </div>
+    
 @endsection
